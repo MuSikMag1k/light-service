@@ -33,17 +33,20 @@
 
 // Palette.
 	$palette: (
-		bg:					#312450,
-		bg-alt:				darken(#312450, 5),
-		fg:					rgba(255,255,255,0.55),
-		fg-bold:			#ffffff,
-		fg-light:			rgba(255,255,255,0.35),
-		border:				rgba(255,255,255,0.15),
-		border-bg:			rgba(255,255,255,0.05),
-		accent1:			#5e42a6,
-		accent1-alt:		darken(#5e42a6, 10),
-		accent2:			#5052b5,
-		accent2-alt:		darken(#5052b5, 10),
-		accent3:			#b74e91,
-		accent3-alt:		darken(#b74e91, 10)
+		bg:					#ffffff,
+		bg-alt:				darken(#ffffff, 5),
+		fg:					rgba(0,0,0,0.55),
+		fg-bold:			#000000,
+		fg-light:			rgba(0,0,0,0.35),
+		fg-alt:					rgba(255,255,255,0.55),
+		fg-bold-alt:			#ffffff,
+		fg-light-alt:			rgba(255,255,255,.35),
+		border:				rgba(0,0,0,0.15),
+		border-bg:			rgba(0,0,0,0.05),
+		accent1:			#ffffff,
+		accent1-alt:		darken(#ffffff, 10),
+		accent2:			#000000,
+		accent2-alt:		darken(#000000, 10),
+		accent3:			#FFCE00,
+		accent3-alt:		darken(#FFCE00, 10)
 	);
