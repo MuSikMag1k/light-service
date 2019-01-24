@@ -2334,7 +2334,7 @@ table {
     -ms-transition: color 0.2s ease;
     transition: color 0.2s ease;
     border: 0;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(0, 0, 0, 0.35);
     display: block;
     font-size: 0.6em;
     font-weight: bold;
@@ -2354,21 +2354,21 @@ table {
       right: 0;
       width: 100%; }
     #sidebar nav a:before {
-      background: white; }
+      background: #0d0d0d; }
     #sidebar nav a:after {
-      background-image: -moz-linear-gradient(to right, #ffffff, #FFCE00);
-      background-image: -webkit-linear-gradient(to right, #ffffff, #FFCE00);
-      background-image: -ms-linear-gradient(to right, #ffffff, #FFCE00);
-      background-image: linear-gradient(to right, #ffffff, #FFCE00);
+      background-image: -moz-linear-gradient(to right, #000000, #FFCE00);
+      background-image: -webkit-linear-gradient(to right, #000000, #FFCE00);
+      background-image: -ms-linear-gradient(to right, #000000, #FFCE00);
+      background-image: linear-gradient(to right, #000000, #FFCE00);
       -moz-transition: max-width 0.2s ease;
       -webkit-transition: max-width 0.2s ease;
       -ms-transition: max-width 0.2s ease;
       transition: max-width 0.2s ease;
       max-width: 0; }
     #sidebar nav a:hover {
-      color: rgba(255, 255, 255, 0.55); }
+      color: rgba(0, 0, 0, 0.55); }
     #sidebar nav a.active {
-      color: #ffffff; }
+      color: #000000; }
       #sidebar nav a.active:after {
         max-width: 100%; }
   body.is-preload #sidebar > .inner {

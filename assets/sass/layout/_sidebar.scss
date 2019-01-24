@@ -68,7 +68,7 @@
 			a {
 				@include vendor('transition', 'color #{_duration(transition)} ease');
 				border: 0;
-				color: _palette(fg-light-alt);
+				color: _palette(fg-light);
 				display: block;
 				font-size: 0.6em;
 				font-weight: _font(weight-bold);
@@ -92,21 +92,21 @@
 				}
 
 				&:before {
-					background: lighten(_palette(bg), 5);
+					background: lighten(_palette(accent2), 5);
 				}
 
 				&:after {
-					@include vendor('background-image', 'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
+					@include vendor('background-image', 'linear-gradient(to right, #{_palette(accent2)}, #{_palette(accent3)})');
 					@include vendor('transition', 'max-width #{_duration(transition)} ease');
 					max-width: 0;
 				}
 
 				&:hover {
-					color: _palette(fg-alt);
+					color: _palette(fg);
 				}
 
 				&.active {
-					color: _palette(fg-bold-alt);
+					color: _palette(fg-bold);
 
 					&:after {
 						max-width: 100%;
