@@ -2446,3 +2446,11 @@ table {
   @media screen and (max-width: 1280px) {
     #intro {
       background-attachment: scroll; } }
+
+.custom-phone-button {
+  display: inline-block;
+  padding: 0 0.5em;
+  background: #4ccc01;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 80%; }

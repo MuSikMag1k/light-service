@@ -56,3 +56,13 @@
 	@import 'layout/footer';
 	@import 'layout/sidebar';
 	@import 'layout/intro';
+
+	
+.custom-phone-button {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: #4ccc01;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 80%;
+}
