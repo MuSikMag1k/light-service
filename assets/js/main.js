@@ -33,16 +33,16 @@
 	// Forms.
 
 		// Hack: Activate non-input submits.
-			$('form').on('click', '.submit', function(event) {
+			// $('form').on('click', '.submit', function(event) {
 
-				// Stop propagation, default.
-					event.stopPropagation();
-					event.preventDefault();
+			// 	// Stop propagation, default.
+			// 		event.stopPropagation();
+			// 		event.preventDefault();
 
-				// Submit form.
-					$(this).parents('form').submit();
+			// 	// Submit form.
+			// 		$(this).parents('form').submit();
 
-			});
+			// });
 
 	// Sidebar.
 		if ($sidebar.length > 0) {
@@ -188,3 +188,29 @@
 			});
 
 })(jQuery);
+
+
+// email sendind
+const buttonEl = document.querySelector('#send-email-button');
+const clientFormEl = document.querySelector('#client-form');
+const clientNameEl = document.querySelector('#clientName');
+const clientPhoneEl = document.querySelector('#clientPhoneNumber');
+const clientMessageEl = document.querySelector('#clientMessage');
+const modalEl = document.querySelector('.custom-modal');
+
+// [clientNameEl, clientPhoneEl, clientMessageEl].forEach(el => el.addEventListener("change", event => event.target.classList.remove("error")));
+
+clientFormEl.onsubmit = (event) => {
+	event.preventDefault();
+	emailjs.sendForm('gmail', 'template_lIUdJeEU', document.querySelector('#client-form'))
+		.then(() => {
+			clientNameEl.value = null;
+			clientPhoneEl.value = null;
+			clientMessageEl.value = null;
+			modalEl.classList.add("active");
+			setTimeout(() => modalEl.classList.remove("active"), 5000);
+		})
+		.catch((error) => {
+			console.error('FAILED...', error);
+		});
+}

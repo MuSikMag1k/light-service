@@ -173,23 +173,23 @@
 				<p>Вы можете заполнить форму ниже и мы обязательно с Вами свяжемся, или же позвоните нам.</p>
 				<div class="split style1">
 					<section>
-						<form method="post" action="#">
+						<form id="client-form" >
 							<div class="fields">
 								<div class="field half">
-									<label for="name">Имя</label>
-									<input type="text" name="name" id="name" />
+									<label for="clientName">Имя</label>
+									<input type="text" name="clientName" id="clientName" minlength="3" maxlength="20" required placeholder="Дмитрий"/>
 								</div>
 								<div class="field half">
-									<label for="phone">Телефон</label>
-									<input type="text" name="phone" id="phone" />
+									<label for="clientPhoneNumber">Телефон</label>
+									<input type="text" name="clientPhoneNumber" id="clientPhoneNumber" pattern="\+380\d{9}" required placeholder="+380987654321"/>
 								</div>
 								<div class="field">
-									<label for="message">Сообщение</label>
-									<textarea name="message" id="message" rows="5"></textarea>
+									<label for="clientMessage">Сообщение</label>
+									<textarea name="clientMessage" id="clientMessage" minlength="5" maxlength="500" required rows="5" placeholder="Стиральная машина бъет током..."></textarea>
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit">Отправить</a></li>
+								<li><input type="submit" value="Отправить" class="button submit" id="send-email-button" /></li>
 							</ul>
 						</form>
 					</section>
@@ -228,6 +228,14 @@
 
 	</div>
 
+	<div class="custom-modal">
+		<div class="custom-modal-content">
+			<h2>Заявка отправлена</h2>
+			<p>С Вами свяжутся в ближайшее время, но если Вам нужен срочный выезд то позвоните по одному из контактных телефонов.</p>
+			<span>Хорошего дня</span>
+		</div>
+	</div>
+
 	<!-- Footer -->
 	<!-- <footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
@@ -236,7 +244,12 @@
 					</ul>
 				</div>
 			</footer> -->
-
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+	<script type="text/javascript">
+			(function(){
+				emailjs.init("user_OJKR3JmlpV2lbnuYh70My");
+			})();
+	</script>
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
