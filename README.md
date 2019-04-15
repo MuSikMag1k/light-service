@@ -1,0 +1,1 @@
+Light-service website [![Build Status](https://travis-ci.org/MuSikMag1k/light-service.svg?branch=master)](https://travis-ci.org/MuSikMag1k/light-service)
