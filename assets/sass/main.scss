@@ -95,3 +95,11 @@ input.error, textarea.error {
 		padding: 2em;
 	}
 }
+
+.author-link {
+	position: fixed;
+	left: 10%;
+	bottom: 10%;
+	z-index: 10001;
+	font-size: 60%;
+}
